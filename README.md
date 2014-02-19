@@ -5,8 +5,8 @@ It aims to minimize the number of HTTP requests and maximize caching opporunitie
 
 What Class Requirements does is make available two methods on the page types:
 
-1. ClassRequirement(String $class, String $file)
-2. ClassRequirements(String $class, Array $files) (wrapper around 1)
+1. `ClassRequirement(String $class, String $file)`
+2. `ClassRequirements(String $class, Array $files)` (wrapper around 1)
  
 It will manage requirements and after all requirements are collected it will 
 create a combined file for each class and each extension.
