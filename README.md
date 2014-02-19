@@ -1,7 +1,7 @@
 Class Requirements (silverstripe-svdrequirements)
 ============================
 This is a functionality to make better use of the Requirements functions to include javascript and css assets.
-It aims to minimize the number of HTTP requests and maximize caching opporunities whilst making Requirements less confusing to use.
+It aims to minimize the number of HTTP requests and maximize caching opportunities whilst making Requirements less confusing to use.
 
 What Class Requirements does is make available two methods on the page types:
 
