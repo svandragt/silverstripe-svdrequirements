@@ -1,0 +1,6 @@
+Name: classrequirements
+Before: 'mysite'
+---
+Page_Controller:
+  extensions: 
+    - ClassRequirementsExtension
