@@ -7,12 +7,21 @@ What Class Requirements does is make available two methods on the page types:
 
 1. `ClassRequirement(String $class, String $file)`
 2. `ClassRequirements(String $class, Array $files)` (wrapper around 1)
+3. 
+
+## Benefits
  
 It will manage requirements and after all requirements are collected it will 
 create a combined file for each class and each extension.
 
 This optimizes performance as on subsequent pages the requirement for the base class have
 already been cached, but still benefits from minimal http requests using combined_files.
+
+It also allows module developers to hook their requirements into the pagetypes using the following syntax:
+
+```
+$this->owner->ClassRequirements(get_class($this->owner), $files);
+```
 
 ## Usage:
 
