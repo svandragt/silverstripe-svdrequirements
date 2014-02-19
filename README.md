@@ -7,7 +7,6 @@ What Class Requirements does is make available two methods on the page types:
 
 1. `ClassRequirement(String $class, String $file)`
 2. `ClassRequirements(String $class, Array $files)` (wrapper around 1)
-3. 
 
 ## Benefits
  
