@@ -14,6 +14,7 @@ class ControllerRequirementsExtension extends Extension {
 	/**
 	 * For each extension type, create a combined file for each class that has requirements.
 	 * Note: If this is not late enough we can consider using Object->afterExtending()
+	 *       or onAfterInit() { $this->owner->afterExtending('onAfterInit', function(){...} ); }
 	 */
 	public function onAfterInit() {
 		foreach (array('js','css') as $ext) {
