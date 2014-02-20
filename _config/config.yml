@@ -1,4 +1,5 @@
-Name: ControllerRequirements
+---
+Name: controllerrequirements
 Before: 'mysite'
 ---
 Page_Controller:
