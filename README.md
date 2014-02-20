@@ -11,7 +11,7 @@ What Controller Requirements does is make available two methods on page type con
 
 ## Usage:
 
-1. Extract / clone the package.
+1. Install using composer: `composer require "svandragt/silverstripe-svdrequirements:*"`
 2. By default the ControllerRequirementsExtension is attached to Page_Controller, through the config.yml file. 
 
 For example you might have a `Page` and `HomePage extends Page` class, each with requirements. On each you run
