@@ -1,6 +1,6 @@
 Controller Requirements (silverstripe-svdrequirements)
 ============================
-This is a wrapper around the included Requirements class that allows code to inject CSS/Javascript references into a Controller class, even from an Extension.
+This is a wrapper around the included Requirements class that allows any code to inject CSS/Javascript references into a Controller class, even from an Extension.
 
 It minimizes the number of HTTP requests / maximizes caching opportunities compared to plain `Requirements::combine_files()` by deferring the combine_files() method and eases implementation by only having to use a single method.
 
