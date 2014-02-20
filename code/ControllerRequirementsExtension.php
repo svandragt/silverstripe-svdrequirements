@@ -6,17 +6,16 @@
  *
  * We can also pass requirements to a specific class
  */
-class ClassRequirementsExtension extends Extension {
+class ControllerRequirementsExtension extends Extension {
 
 	private $js = array();
 	private $css = array();
 
 	/**
 	 * For each extension type, create a combined file for each class that has requirements.
+	 * Note: If this is not late enough we can consider using Object->afterExtending()
 	 */
 	public function onAfterInit() {
-		Debug::message(__CLASS__);
-
 		foreach (array('js','css') as $ext) {
 			foreach (array_keys($this->$ext) as $classname) {
 				$e = $this->$ext;
@@ -26,11 +25,11 @@ class ClassRequirementsExtension extends Extension {
 	}
 
 	/**
-	 * Add the  file to the list of class requirements, seperated by extension
+	 * Add the  file to the list of Controller Requirements, seperated by extension
 	 * @param String $class class name
 	 * @param String $file  requirement filename
 	 */
-	public function ClassRequirement(String $class, String $file) {
+	public function AddRequirement(String $class, String $file) {
 		$pi  = pathinfo($file);
 		$ext = $pi['extension'];
 		$e   = &$this->$ext;
@@ -40,13 +39,13 @@ class ClassRequirementsExtension extends Extension {
 	}
 
 	/**
-	 * Convenience wrapper around ClassRequirement to quickly add a bunch of requirements
+	 * Convenience wrapper around AddRequirement to quickly add a bunch of requirements
 	 * @param String $class class name
 	 * @param Array $files  requirement filenames in array format
 	 */
-	public function ClassRequirements(String $class, Array $files) {
+	public function AddRequirements(String $class, Array $files) {
 		foreach ($files as $file) {
-			$this->ClassRequirement($class, $file);
+			$this->AddRequirement($class, $file);
 		}
 	}
 

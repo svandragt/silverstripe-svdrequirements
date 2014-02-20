@@ -1,6 +1,6 @@
-Name: classrequirements
+Name: ControllerRequirements
 Before: 'mysite'
 ---
 Page_Controller:
   extensions: 
-    - ClassRequirementsExtension
+    - ControllerRequirementsExtension
