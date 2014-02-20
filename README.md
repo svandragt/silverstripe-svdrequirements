@@ -1,6 +1,6 @@
 Controller Requirements (silverstripe-svdrequirements)
 ============================
-THIS CODE IS NOT PRODUCTION READY; but feedback on existing developments is welcomed.
+THIS CODE IS NOT PRODUCTION TESTED; but feedback on existing developments is welcomed.
 
 This is a wrapper around the included Requirements class that allows any code to inject CSS/Javascript references into a Controller class, even from an Extension.
 
