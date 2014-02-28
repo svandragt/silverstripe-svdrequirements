@@ -1,4 +1,4 @@
-SvdRequirements(silverstripe-svdrequirements)
+SvdRequirements
 ============================
 This is a convenience extension enforcing best practices for using Requirements.
 
