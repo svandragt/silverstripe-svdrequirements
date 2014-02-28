@@ -10,12 +10,12 @@ class SvdRequirements extends Requirements {
 	 * @param  [string] $media see Requirements class
 	 */
 	static public function combine( $files, $media = null) {
-		if (!is_string($files)) {
+		if (is_string($files)) {
 			$files = array($files);
 		}
 		$class = self::backtrace_class();
 		$assets = self::populate_assets($files);
-	
+
 		foreach (array_keys($assets) as $ext) {
 			if (!isset($assets[$ext])) {
 				continue;
@@ -51,9 +51,9 @@ class SvdRequirements extends Requirements {
 	 * @return [array] list of assets seperated by extension
 	 */
 	static private function populate_assets($files) {
-			$assets = array();
+		$assets = array();
 
-			foreach ($files as $file) {
+		foreach ($files as $file) {
 			$ext = self::extension_from_filename($file);
 
 			if (!array_key_exists($ext, $assets)) {
