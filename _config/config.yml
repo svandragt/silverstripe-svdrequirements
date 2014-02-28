@@ -1,7 +1,6 @@
 ---
-Name: controllerrequirements
-Before: 'mysite'
+Name: svdrequirement
 ---
 Page_Controller:
   extensions: 
-    - ControllerRequirementsExtension
+    - SvdRequirementsExtension
