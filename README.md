@@ -26,9 +26,9 @@ page_controller.js
 homepage_controller.js
 ```
 
-## SvdRequirementsExtension
+## Quick access to theme folder
 
-This optional extension (enabled by default) adds a shortcut to the theme folder by setting a `$theme_dir` property to the Page_controller which you can access through `$this->theme_dir` - which would return 'themes/simple' for example. 
+This optional SvdRequirementsExtension (enabled by default) adds a shortcut to the theme folder by setting a `$theme_dir` property to the Page_controller which you can access through `$this->theme_dir` - which would return 'themes/simple' for example. 
 
 You can convert the simple theme to use requirements in 2 steps:
 
