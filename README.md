@@ -36,14 +36,14 @@ You can convert the simple theme to use requirements in 2 steps:
 2. to the Page's init() method add the following code:
 
 ```php
-		$assets = array(
-			"{$this->theme_dir}/css/reset.css",
-			"{$this->theme_dir}/css/layout.css",
-			"{$this->theme_dir}/css/typography.css",
-			"{$this->theme_dir}/css/form.css",
-			"{$this->theme_dir}/javscript/script.js",
-		);
-		SvdRequirements::combine($assets);
+$assets = array(
+	"{$this->theme_dir}/css/reset.css",
+	"{$this->theme_dir}/css/layout.css",
+	"{$this->theme_dir}/css/typography.css",
+	"{$this->theme_dir}/css/form.css",
+	"{$this->theme_dir}/javscript/script.js",
+);
+SvdRequirements::combine($assets);
 ```
 
 I keep a [list of known bugs](https://github.com/svandragt/silverstripe-svdrequirements/issues).
