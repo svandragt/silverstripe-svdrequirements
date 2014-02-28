@@ -1,6 +1,6 @@
 SvdRequirements
 ============================
-This is a convenience extension enforcing best practices for using Requirements.
+This is a convenience module enforcing best practices for using Requirements.
 
 ## Features:
 
